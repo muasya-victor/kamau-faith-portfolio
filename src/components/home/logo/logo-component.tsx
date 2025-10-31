@@ -1,26 +1,24 @@
 import React from "react";
-import { services } from "./service-data";
+import { logoServices } from "./logo-data";
 
-const Services = () => {
+const LogoComponent = () => {
   return (
-    <div className="flex flex-col gap-4 px-4 py-8">
-      Services
-      <div className="flex flex-col gap-4 border-t border-b border-gray-200 py-4">
+    <div className="flex flex-col gap-4 p-4">
+      <div className="flex flex-col gap-4 border-b border-gray-200 py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           {/* left */}
           <div className="flex flex-col gap-4 h-full justify-between items-start">
             <div className="flex flex-col gap-4">
-              <h3 className="font-semibold">Full Strategic Brand Design</h3>
+              <h3 className="font-semibold">Logo Design</h3>
               <p className="text-sm">
-                Perfect for startups and growing businesses that want the
-                essentials. A clean, well-structured brand identity that’s just
-                enough to make your business look professional and recognisable
-                without the extras.
+                For small businesses that only need a logo. No complicated files
+                or long timelines. Just get your professionally designed logo
+                and hit the ground running!
               </p>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-sm font-semibold">Starting from:</h3>
-              <p className="">Ksh 80,000 / USD 700</p>
+              <p className="">Ksh 8,000 / USD 80</p>
             </div>
           </div>
 
@@ -28,7 +26,7 @@ const Services = () => {
           <div className="flex flex-col gap-4">
             <h3 className="font-semibold">What’s Included:</h3>
 
-            {services.map((service, index) => {
+            {logoServices.map((service, index) => {
               return (
                 <div key={index} className="flex flex-col gap-2">
                   <div className="flex items-start gap-2">
@@ -57,4 +55,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default LogoComponent;
