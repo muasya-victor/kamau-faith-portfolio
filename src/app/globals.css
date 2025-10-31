@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 1000;
+  font-style: italic;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

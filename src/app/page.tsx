@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import { Hero } from "@/components/home/hero-section";
 import LogoComponent from "@/components/home/logo/logo-component";
 import MiniBrand from "@/components/home/mini-brand/mini-brand-component";
@@ -25,6 +26,7 @@ export default function Home() {
           <ArrowRight className="h-12 w-12 " />
         </button>
       </div>
+      <Footer />
     </div>
   );
 }
