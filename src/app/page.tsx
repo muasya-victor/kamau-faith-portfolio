@@ -2,6 +2,7 @@ import { Hero } from "@/components/home/hero-section";
 import LogoComponent from "@/components/home/logo/logo-component";
 import MiniBrand from "@/components/home/mini-brand/mini-brand-component";
 import Services from "@/components/home/services/services-component";
+import WebDesign from "@/components/home/web/web-component";
 import { WorkSection } from "@/components/home/work-sectiom";
 import { Menu } from "@/components/layout/menu";
 import Image from "next/image";
@@ -12,8 +13,9 @@ export default function Home() {
       <Hero />
       <WorkSection />
       <Services />
-      <MiniBrand/>
+      <MiniBrand />
       <LogoComponent />
+      <WebDesign />
     </div>
   );
 }
